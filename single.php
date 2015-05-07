@@ -34,7 +34,7 @@
                         <?php else :
                         $image = get_bloginfo( 'stylesheet_directory') . '/images/ss-thumb.jpg'; ?>
                         <?php endif; ?>
-                            <div class="single-thumb" style="background-image: url('<?php echo $image; ?>')" >
+                            <div class="single-thumb FlexEmbed FlexEmbed--16by9" style="background-image: url('<?php echo $image; ?>')" >
                                 <div class="single-title">
                                     <div class="inner">
                                         <div class="vcard author"><span class="fn">

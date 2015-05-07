@@ -974,9 +974,28 @@ body #header { position: fixed; top: 0; }
 
 .single-head .single-thumb {
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: 50%;
     background-color: #5a5a5a;
+    margin: 0 auto 1em;
+    max-height: 600px;
+    max-width: 600px;
+}
+
+.FlexEmbed {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.FlexEmbed:before {
+  content: "";
+  display: block;
+  width: 100%;
+}
+
+.FlexEmbed--16by9:before {
+  padding-bottom: 56.25%;
 }
 
 .single-head .author { width: auto; float: none; height: 40px; line-height: 40px; color: #FFF; font-size: 1em; }
