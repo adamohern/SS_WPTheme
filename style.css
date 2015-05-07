@@ -963,13 +963,20 @@ body #header { position: fixed; top: 0; }
 
 .single-head .wp-post-image { width: 100%; float: left; }
 
-.single-head .single-head-words {
+.single-head .single-title {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
 	padding: 20em 0 3em;
 	text-shadow: 1px 1px 1px RGBa( 0, 0, 0, 0.6 );
 	background: linear-gradient( transparent, RGBa( 0, 0, 0, 0.8 ) );
+}
+
+.single-head .single-thumb {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    background-color: #5a5a5a;
 }
 
 .single-head .author { width: auto; float: none; height: 40px; line-height: 40px; color: #FFF; font-size: 1em; }
@@ -1057,7 +1064,7 @@ textarea#comment {
 	.single .post span.fn a { color: #CC0000; }
 	.single .post span.fn a:hover { color: #CC0000; }
 	.single-head { overflow: hidden; }
-	.single-head .single-head-words { position: static; background: none; clear: both; padding: 1em 0 0; text-shadow: none; }
+	.single-head .single-title { position: static; background: none; clear: both; padding: 1em 0 0; text-shadow: none; }
 	.post-refs { font-size: 0.6875em; }
 	.single .post-refs a { font-size: 0.90909090909em; }
 	.insert-post-ads > div { width: 100%; clear: both; float: none; text-align: center; }

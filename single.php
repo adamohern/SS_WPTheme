@@ -27,30 +27,26 @@
 
 					<div <?php post_class( $postclasses ); ?>>
 						<div class="single-head group">
-                        <!-- start #single-thumb -->
+                        <!-- start .single-thumb -->
                         <?php if (has_post_thumbnail( $post->ID ) ): ?>
                         <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
                         $image = $image[0]; ?>
                         <?php else :
                         $image = get_bloginfo( 'stylesheet_directory') . '/images/ss-thumb.jpg'; ?>
                         <?php endif; ?>
-                        <div id="single-thumb" style="background-image: url('<?php echo $image; ?>')" >
-                        </div><!-- end #single-thumb -->
-							
-							<div class="single-head-words"><div class="inner">
-		
-								<div class="vcard author"><span class="fn">
-									<?php echo get_avatar( get_the_author_meta( 'ID' ), 40 );
-									the_author_posts_link(); ?></span>
-								</div>
-	
-								<h2 class="post-title title entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-		
-								<div class="post_date date updated"><?php the_time( 'F jS, Y' ); ?></div>
-							
-							</div></div>
-	
-						</div><!-- .single-head -->
+                            <div class="single-thumb" style="background-image: url('<?php echo $image; ?>')" >
+                                <div class="single-title">
+                                    <div class="inner">
+                                        <div class="vcard author"><span class="fn">
+                                            <?php echo get_avatar( get_the_author_meta( 'ID' ), 40 );
+                                            the_author_posts_link(); ?></span>
+                                        </div>
+                                        <h2 class="post-title title entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                                        <div class="post_date date updated"><?php the_time( 'F jS, Y' ); ?></div>
+                                    </div>
+                                </div><!-- end .single-title -->
+	                       </div><!-- end .single-thumb -->
+						</div><!-- end .single-head -->
 						
 						<div class="inner"><div class="entry-content">
 						
