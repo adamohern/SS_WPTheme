@@ -27,7 +27,15 @@
 
 					<div <?php post_class( $postclasses ); ?>>
 						<div class="single-head group">
-							<?php the_post_thumbnail( 'singlehead' ); ?>
+                        <!-- start #single-thumb -->
+                        <?php if (has_post_thumbnail( $post->ID ) ): ?>
+                        <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+                        $image = $image[0]; ?>
+                        <?php else :
+                        $image = get_bloginfo( 'stylesheet_directory') . '/images/ss-thumb.jpg'; ?>
+                        <?php endif; ?>
+                        <div id="single-thumb" style="background-image: url('<?php echo $image; ?>')" >
+                        </div><!-- end #single-thumb -->
 							
 							<div class="single-head-words"><div class="inner">
 		
