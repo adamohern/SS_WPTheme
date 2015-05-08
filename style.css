@@ -775,125 +775,41 @@ body #header { position: fixed; top: 0; }
 
 /* end header */
 
-
 /* home */
 
 #content .group.filter-social { margin-bottom: 0; }
-
 #content .filter-social ul { list-style: none; margin: 0; }
-
-.filter { 
-	color: #A5A5A5;
-    float: left;
-    font-weight: 300;
-    letter-spacing: 0.05em;
-    line-height: 1em;
-    padding: 32px 0;
-    max-width: 408px;
-    white-space: nowrap;
-    margin-left: 60px;
-}
-
-.filter ul, .filter ul li { display: inline; }
-
-.filter > ul > li { position: relative; }
-
-.filter ul li a { padding: 0.25em; cursor: pointer; }
-
-.filter ul li a.current { color: #C00000; cursor: default; }
-
-.filter a:hover { color: #666; }
-
-.filter ul li ul { position: absolute; display: none; z-index: 10; left: 0; top: 26px; border-bottom: 1px solid #DDD: }
-.filter ul li:hover ul { display: block; }
-
-.filter ul li ul li { display: block; }
-
-.filter ul li ul li a { display: block; color: #777; background: #FFF; padding: 0.5em 0.75em; border-top: 1px solid #DDD; }
-.filter ul li ul li a:hover { background: #F0F0F0; color: #555; }
-
-.filter ul li ul li a.current { color: #C00000; background: #F0F0F0; }
-
-#content .filter-social ul.social {
-	float: right;
-	height: 32px;
-    background: url( '' ) right center no-repeat;
-    padding: 26px 0 26px 0;
-}
-
+#content .filter-social ul.social {	float: right; height: 32px; background: url( '' ) right center no-repeat;  padding: 26px 0 26px 0; }
 #content .filter-social ul.social li { margin: 0 0 0 12px }
 
+.filter { color: #A5A5A5; float: left; font-weight: 300; letter-spacing: 0.05em; line-height: 1em;  padding: 32px 0;  max-width: 408px; white-space: nowrap; margin-left: 60px; }
+.filter ul, .filter ul li { display: inline; }
+.filter > ul > li { position: relative; }
+.filter ul li a { padding: 0.25em; cursor: pointer; }
+.filter ul li a.current { color: #C00000; cursor: default; }
+.filter a:hover { color: #666; }
+.filter ul li ul { position: absolute; display: none; z-index: 10; left: 0; top: 26px; border-bottom: 1px solid #DDD: }
+.filter ul li:hover ul { display: block; }
+.filter ul li ul li { display: block; }
+.filter ul li ul li a { display: block; color: #777; background: #FFF; padding: 0.5em 0.75em; border-top: 1px solid #DDD; }
+.filter ul li ul li a:hover { background: #F0F0F0; color: #555; }
+.filter ul li ul li a.current { color: #C00000; background: #F0F0F0; }
 .filter-social .social a { background-image: url( 'images/social-icons-2.png' ); }
 
-.reading-list-widget {
-	text-align: center;
-}
+.reading-list-widget { text-align: center; }
+.reading-list-header {}
+.reading-list-header a { display: block; padding: 12px;	background: #C00000; color: #FFF; }
+.reading-list-header a:hover { background: #D11111; }
+.reading-list-widget h3, .reading-list-widget h4 { font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-.reading-list-header {
-}
-
-.reading-list-header a {
-	display: block;
-    padding: 12px;
-	background: #C00000;
-	color: #FFF;
-}
-
-.reading-list-header a:hover {
-	background: #D11111;
-}
-
-.reading-list-widget h3, .reading-list-widget h4 {
-	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.reading-list-header h3 {
-	font-size: 1.75em;
-    font-weight: 900;
-    letter-spacing: 0.1em;
-    line-height: 1em;
-    text-transform: uppercase;
-}
-
-.reading-list-header h4 {
-	font-size: 0.8125em;
-    font-weight: 100;
-    letter-spacing: 0.1em;
-    line-height: 1.3em;
-    margin-top: 0.4em;
-    text-transform: uppercase;
-}
-
-.reading-list-widget .star {
-	font-size: 1.846153846em;
-	line-height: 0.1em;
-}
-
+.reading-list-header h3 { font-size: 1.75em; font-weight: 900; letter-spacing: 0.1em; line-height: 1em; text-transform: uppercase;}
+.reading-list-header h4 { font-size: 0.8125em; font-weight: 100; letter-spacing: 0.1em; line-height: 1.3em; margin-top: 0.4em; text-transform: uppercase; }
+.reading-list-widget .star { font-size: 1.846153846em; line-height: 0.1em; }
 .reading-list-header h4 .date {	font-style: italic; }
-
-.reading-list-widget a.recent-reading-item {
-	display: block;
-	background: #FFF;
-	border-top: 1px solid #CCC;
-	padding: .35em 0.5em;
-	font-style: italic;
-}
-
+.reading-list-widget a.recent-reading-item { display: block; background: #FFF;	border-top: 1px solid #CCC;	padding: .35em 0.5em; font-style: italic;}
 .reading-list-widget a.recent-reading-item:hover { background: #F9F9F9; }
-
-.reading-list-widget a.recent-reading-item h4 {
-	font-size: 1.375em;
-	font-weight: 100;
-	line-height: 1.5em;
-}
-
-.reading-list-widget a.recent-reading-item .author {
-	color: #AAA;
-    font-weight: 100;
-    line-height: 1.8em;
-}
-
-
+.reading-list-widget a.recent-reading-item h4 {	font-size: 1.375em;	font-weight: 100; line-height: 1.5em; }
+.reading-list-widget a.recent-reading-item .author { color: #AAA; font-weight: 100; line-height: 1.8em; }
 
 /* home responsive */
 
@@ -979,7 +895,7 @@ body #header { position: fixed; top: 0; }
     background-color: #5a5a5a;
     margin: 0 auto 1em;
     max-height: 600px;
-    max-width: 600px;
+    max-width: 3840px;
 }
 
 .FlexEmbed {
