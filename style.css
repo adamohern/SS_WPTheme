@@ -992,24 +992,12 @@ textarea#comment {
 }
 
 @media all and (min-width: 1900px) {
-	.single-head { max-height:700px; }
+	.single-head .single-thumb { max-height:800px; }
 }
 
 @media all and (max-width: 600px) {
-	.single .single-post .inner { width: 85%; }
-	.single .post h2.post-title { font-size: 1.5em; }
-	.single .post h2.post-title a, .single-head .author, .post .single-head .date { color: #303030; }
-	.single .post span.fn a { color: #CC0000; }
-	.single .post span.fn a:hover { color: #CC0000; }
-	.single-head { overflow: hidden; }
-	.single-head .single-title { position: static; background: none; clear: both; padding: 1em 0 0; text-shadow: none; }
-	.post-refs { font-size: 0.6875em; }
-	.single .post-refs a { font-size: 0.90909090909em; }
+	.single .post h2.post-title { font-size: 1.8em; }
 	.insert-post-ads > div { width: 100%; clear: both; float: none; text-align: center; }
-}
-
-@media all and (max-width: 390px) {
-
 }
 
 /* end single page */
