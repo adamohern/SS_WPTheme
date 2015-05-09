@@ -985,14 +985,22 @@ textarea#comment {
     width: 100%;
 }
 
-@media all and (max-width: 320px) {
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
     .single .single-post .inner {width:95%;}
     .single-head .single-title {padding:0;}
     .single .post h2.post-title {font-size: 1.5em; margin:0.2em 0 0.2em;}
 	.insert-post-ads > div {width: 100%; clear: both; float: none; text-align: center;}
 }
 
-@media all and (min-width: 601px) {
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .single .post h2.post-title { font-size: 1.8em; }
+	.insert-post-ads > div { width: 100%; clear: both; float: none; text-align: center; }
 	.single .interactions { right: 1em; text-align: right; padding-left:10px;}
 	.single .interactions a, .single .interactions > span { display: block; margin-bottom: 8px; }
 	.single .favorite-icon { margin-right: 0; }
@@ -1001,12 +1009,6 @@ textarea#comment {
 @media all and (min-width: 1900px) {
 	.single-head .single-thumb { max-height:800px; }
 }
-
-@media all and (max-width: 600px) {
-	.single .post h2.post-title { font-size: 1.8em; }
-	.insert-post-ads > div { width: 100%; clear: both; float: none; text-align: center; }
-}
-
 /* end single page */
 
 
