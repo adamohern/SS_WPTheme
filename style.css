@@ -985,6 +985,13 @@ textarea#comment {
     width: 100%;
 }
 
+@media all and (max-width: 320px) {
+    .single .single-post .inner {width:95%;}
+    .single-head .single-title {padding:0;}
+    .single .post h2.post-title {font-size: 1.5em; margin:0.2em 0 0.2em;}
+	.insert-post-ads > div {width: 100%; clear: both; float: none; text-align: center;}
+}
+
 @media all and (min-width: 601px) {
 	.single .interactions { right: 1em; text-align: right; padding-left:10px;}
 	.single .interactions a, .single .interactions > span { display: block; margin-bottom: 8px; }
