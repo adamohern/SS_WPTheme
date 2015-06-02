@@ -2,7 +2,7 @@
 Theme Name: EvD SolidSmack 2015
 Theme URI:
 Author: EvD Media LLC
-Version: 2.1
+Version: 2.2
 
 */
 
@@ -988,6 +988,27 @@ body #header { position: fixed; top: 0; }
 .single .post .post-text h4 { font-size: 1em; line-height: 1.2em; }
 .single .post .post-text h5, .single .post .post-text h6 { font-size: 0.875em; line-height: 1.2em; }
 .single p { margin-bottom: 1.7em; }
+
+.smallBox {
+	margin: 10px 0 20px 0;
+	padding: 20px;
+	vertical-align: middle;
+	color: #5A5A5A;
+	font-size: 14px;
+	background-color: #E6E6E6;
+	background-repeat: no-repeat;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), color-stop(25%, white), to(#E6E6E6));
+	background-image: -webkit-linear-gradient(white, white 25%, #E6E6E6);
+	background-image: -moz-linear-gradient(top, white, white 25%, #E6E6E6);
+	background-image: -ms-linear-gradient(white, white 25%, #E6E6E6);
+	background-image: -o-linear-gradient(white, white 25%, #E6E6E6);
+	background-image: linear-gradient(white, white 25%, #E6E6E6);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#e6e6e6', GradientType = 0);
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #CCC;
+}
 
 @media only screen
   and (min-device-width: 320px)
