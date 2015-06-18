@@ -1,0 +1,157 @@
+[33mcommit 2416b1b9ee74d968aac7ee3d2b199ecdb69fe406[m
+Author: joshmings <goatlip@gmail.com>
+Date:   Sat May 9 19:31:50 2015 -0500
+
+    Single clean up
+
+[33mcommit ed482a3da49769b2d930a236de04c3cf8950ca36[m
+Author: joshmings <goatlip@gmail.com>
+Date:   Sat May 9 13:22:40 2015 -0500
+
+    Media query update
+
+[33mcommit 2099d8b633379f6ac53bf3698137b1403962f5e2[m
+Author: joshmings <goatlip@gmail.com>
+Date:   Sat May 9 12:57:30 2015 -0500
+
+    Media query update
+
+[33mcommit 5fc903012b04fe5e5859734212af7ea1f0db970b[m
+Author: joshmings <goatlip@gmail.com>
+Date:   Fri May 8 18:48:37 2015 -0500
+
+    Single media query updates
+
+[33mcommit f2be1e7d8a792cda0ecb8737619231e62c23701c[m
+Author: joshmings <goatlip@gmail.com>
+Date:   Fri May 8 18:32:21 2015 -0500
+
+    single-head clean up
+
+[33mcommit 98b19a35cf3697e77968eceb0da085b51db47c4c[m
+Author: joshmings <goatlip@gmail.com>
+Date:   Fri May 8 17:59:35 2015 -0500
+
+    Style clean-up
+
+[33mcommit 4f3e010cceff961fb915fbf27d7f3c3e011a8a24[m
+Author: joshmings <goatlip@gmail.com>
+Date:   Fri May 8 10:35:04 2015 -0500
+
+    Code clean up
+
+[33mcommit 91c8bbafdb7fab25099b500cf0b183544ec3451f[m
+Author: joshmings <goatlip@gmail.com>
+Date:   Thu May 7 17:14:57 2015 -0500
+
+    Rework of .single-head FlexEmbed
+
+[33mcommit 8ee631b61a08b279bc0054e19bb4c4fbbd593acf[m
+Author: joshmings <goatlip@gmail.com>
+Date:   Thu May 7 16:55:39 2015 -0500
+
+    Rework of .single-head
+
+[33mcommit 0763365e1108f72cddb632df8c9dee837adc4c84[m
+Author: joshmings <goatlip@gmail.com>
+Date:   Thu May 7 15:49:41 2015 -0500
+
+    Thumbnail update to embed as background-image url
+
+[33mcommit b58795bfebc34129e5f37806d10debda79bb6426[m
+Author: adamohern <adam@ChocolateChip.local>
+Date:   Wed Apr 22 13:00:54 2015 -0400
+
+    Cosmetic version change
+
+[33mcommit 3aa15c66763bcb279c9d7bcec64876310e745cf4[m
+Author: adamohern <adam@ChocolateChip.local>
+Date:   Wed Apr 22 12:20:12 2015 -0400
+
+    updated screenshot
+
+[33mcommit cc0b5d741d87cd5540ad3553db481706e8152523[m
+Author: adamohern <adam@ChocolateChip.local>
+Date:   Wed Apr 22 11:39:29 2015 -0400
+
+    added screenshot
+
+[33mcommit f5632b281c747ce50754475c7030cd4266c65c1d[m
+Author: adamohern <adam@ChocolateChip.local>
+Date:   Wed Apr 22 11:15:19 2015 -0400
+
+    Added Dev flags to Style, removed stupid code
+
+[33mcommit b10694424806296907a3c618e2c6098ea969870e[m
+Author: adamohern <adam@ChocolateChip.local>
+Date:   Wed Apr 22 10:31:02 2015 -0400
+
+    added comment flag
+
+[33mcommit e31cfee321eeaa5640e1d349aaa5eb0b1881c5da[m
+Author: adamohern <adam@ChocolateChip.local>
+Date:   Wed Apr 22 10:30:37 2015 -0400
+
+    Revert ab74fe6..f0d9296
+    
+    This rolls back to commit ab74fe6bce6617fb5ab7c15d8126d8c146ba1f2b.
+
+[33mcommit f0d929604aa2e040b817ccf1db5defa520863e24[m
+Author: adamohern <adam@ChocolateChip.local>
+Date:   Wed Apr 22 10:29:48 2015 -0400
+
+    Revert "Merge branch 'experimental-feature' into dev"
+    
+    This reverts commit ab74fe6bce6617fb5ab7c15d8126d8c146ba1f2b, reversing
+    changes made to 824dbd7722972cb26d5b6f544d030cb19720b405.
+
+[33mcommit ab74fe6bce6617fb5ab7c15d8126d8c146ba1f2b[m
+Merge: 824dbd7 8890fe5
+Author: adamohern <adam@ChocolateChip.local>
+Date:   Wed Apr 22 10:28:38 2015 -0400
+
+    Merge branch 'experimental-feature' into dev
+
+[33mcommit 8890fe5e0f634dd752f3ccd9ec44592ca4be61b9[m
+Author: adamohern <adam@ChocolateChip.local>
+Date:   Wed Apr 22 10:27:55 2015 -0400
+
+    great idea
+
+[33mcommit 824dbd7722972cb26d5b6f544d030cb19720b405[m
+Author: adamohern <adam@ChocolateChip.local>
+Date:   Wed Apr 22 10:26:04 2015 -0400
+
+    Added dev flag
+
+[33mcommit acebf3b489c86adffdf91e1504989b7cad00a017[m
+Author: adamohern <adam@ChocolateChip.local>
+Date:   Wed Apr 22 10:24:26 2015 -0400
+
+    integrated version number
+
+[33mcommit d598aab91d70bfe5828560bf079949cef55bbc83[m
+Author: adamohern <adam@ChocolateChip.local>
+Date:   Wed Apr 22 10:22:57 2015 -0400
+
+    Initial SS2014 theme
+
+[33mcommit 3a199943df884ee65431f52593405f5be3989ef0[m
+Author: adamohern <adam@ChocolateChip.local>
+Date:   Wed Apr 22 10:07:41 2015 -0400
+
+    Revert b5e51d4..f24db0f
+    
+    This rolls back to commit b5e51d41b670cec6465814cc89a7b8c34dec09c5.
+
+[33mcommit f24db0fc8286a0eab05099e3465bb4c0884d7815[m
+Author: adamohern <adam@ChocolateChip.local>
+Date:   Wed Apr 22 10:04:11 2015 -0400
+
+    Added a good line to this code.
+
+[33mcommit b5e51d41b670cec6465814cc89a7b8c34dec09c5[m
+Author: adamohern <adam@evd1.tv>
+Date:   Wed Apr 22 09:59:51 2015 -0400
+
+    Initial commit

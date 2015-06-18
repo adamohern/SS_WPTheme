@@ -21,9 +21,9 @@
 					if ( $p == 1 ) { ?>
 							<?php post_box_loop( 'full', 'big-post' ); ?>
 							<div class="sidebar">
-								<div class="ad-300x250"><div class="ad"><?php dynamic_sidebar( 'ad-2' ); ?></div></div>
+								<div class="ad-300x250"><div class="ad primary"><?php dynamic_sidebar( 'ad-2' ); ?></div></div>
 								<?php evd_reading_list(); ?>
-								<div class="ad-300x250"><div class="ad"><?php dynamic_sidebar( 'ad-3' ); ?></div></div>
+								<div class="ad-300x250"><div class="ad secondary"><?php dynamic_sidebar( 'ad-3' ); ?></div></div>
 							</div><!--.sidebar-->
 					<?php
 					} else if ( $p == 3 ) { ?>

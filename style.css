@@ -1,8 +1,8 @@
 /*
-Theme Name: EvD SolidSmack 2015
+Theme Name: EvD SolidSmack 2015 (Dev)
 Theme URI:
 Author: EvD Media LLC
-Version: 2.2
+Version: 2.2 (Dev Branch)
 
 */
 
@@ -321,8 +321,30 @@ input { /* clear default iOS styles */
 
 .ad-300x250 .ad {
 	max-width: 300px;
-	margin: 17px;
+	padding: 17px;
 	overflow: hidden;
+}
+
+.ss-sidebar-ad { width:300px; background-color: #111111; }
+.ss-sidebar-ad .flowplayer { margin:0 auto 8px auto; }
+.ss-sidebar-ad .fp-playlist-external a.is-active span { border-color: #CC0000;}
+.ss-sidebar-ad .fp-playlist-external a { display: inline; }
+.ss-sidebar-ad .fp-playlist-external { margin-bottom: 8px; }
+.ss-sidebar-ad  .fp-playlist-external a span {
+  display: inline-block;
+  width: 85px;
+  height: 85px;
+  margin: 0 2px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+  border: 2px solid #fff;
+  background: gray;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-size: auto 100px;
+  background-position: left;
 }
 
 .social { width: 530px; }
