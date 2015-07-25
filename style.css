@@ -495,7 +495,7 @@ input { /* clear default iOS styles */
 	margin-bottom: 1em;
 }
 .post-boxes .post-excerpt {
-	height: 5em;
+	height: 4.9em;
 	overflow-y: hidden;
 }
 
@@ -993,13 +993,16 @@ body.admin-bar #header { top: 46px; }
     #header .ad-970x90 { max-width: 728px; }
 	.post-boxes .post:nth-child(3n) { margin-right: 13px; }
 	.post-boxes .post:nth-child(3n + 1) { clear: none; }
-	.post-boxes .post:nth-child(even) { margin-right: 0; }
 	.post-boxes .post:nth-child(odd) { clear: left; }
 	.post-boxes .post.big-post { margin: 0 0 1em; max-width: 1000px; }
-	.call-to-action .form-inputs { float: none; clear: both; }
-	.call-to-action input.email { margin-left: 0; padding: 0 5%; width: 70%; }
-	#mc-embedded-subscribe { padding: 0 5%; }
+    .post-boxes .post, .post-boxes .projects {width: 285px; }
+	.call-to-action input.email { margin-left: 0; padding: 0 5%; width:200px; }
 	.ad-300x250 .ad { max-width: none; }
+	#mc-embedded-subscribe { padding: 0 5%; }
+    #footer .col.foot-title { margin-right: 0; }
+	#footer .col.foot-title { width: 240px; }
+	#footer .col.foot-nav { width: 15%; margin-right: 2%; }
+	#footer .col.copy { margin-bottom: 1em; }
 }
 
 @media all and (max-width: 782px) {
@@ -1151,14 +1154,6 @@ body.admin-bar #header { top: 46px; }
 
 /* end single responsive */
 /* footer responsive */
-
-@media all and (max-width: 1150px) {
-	#footer .col.foot-title { margin-right: 0; }
-	#footer .col, #footer .col.foot-title, #footer .col.foot-social, #footer .col.foot-nav { margin-bottom: 3em; }
-	#footer .col.foot-nav.first-foot-nav { clear: both; }
-	#footer .col.foot-nav { width: 31.3%; margin-right: 2%; }
-	#footer .col.copy { margin-bottom: 1em; }
-}
 
 @media all and (max-width: 600px) {
 	#footer h2.site-title { font-size: 2em; line-height: 1em; }
