@@ -2,7 +2,7 @@
 Theme Name: EvD SolidSmack 2015 dev
 Theme URI:
 Author: EvD Media LLC
-Version: 2.2.5
+Version: 2.2.6
 
 */
 
@@ -664,7 +664,7 @@ h2.title-flag:after {
 
 #header .ad-970x90 { float: right; padding-top: 4px; }
 
-.filter-social .search-form { float: left; position: absolute; z-index: 10; margin: 21px 1em 0 0; }
+.filter-social .search-form { float: left; position: absolute; z-index: 10; }
 
 .search-form input.search-field { 
 	width: 110px;
@@ -692,7 +692,7 @@ body #header { position: fixed; top: 0; }
 #content .filter-social ul.social {	float: right; height: 32px; background: url( '' ) right center no-repeat;  padding: 26px 0 26px 0; }
 #content .filter-social ul.social li { margin: 0 0 0 12px }
 
-.filter { color: #A5A5A5; float: left; font-weight: 300; letter-spacing: 0.05em; line-height: 1em;  padding: 32px 0;  max-width: 408px; white-space: nowrap; margin-left: 60px; }
+.filter { color: #A5A5A5; float: left; font-weight: 300; letter-spacing: 0.05em; line-height: 1em; max-width: 408px; white-space: nowrap; margin-left: 60px; }
 .filter ul, .filter ul li { display: inline; }
 .filter > ul > li { position: relative; }
 .filter ul li a { padding: 0.25em; cursor: pointer; }
@@ -988,16 +988,17 @@ body.admin-bar #header { top: 46px; }
 }
 
 @media all and (max-width: 1150px) {
-	#main { width: 751px; }
-	#header .inner, #footer .inner { width: 685px; }
+	#main { width: auto; }
+	#header .inner, #footer .inner { max-width: 940px; }
+    #header .ad-970x90 { max-width: 728px; }
 	.post-boxes .post:nth-child(3n) { margin-right: 13px; }
 	.post-boxes .post:nth-child(3n + 1) { clear: none; }
 	.post-boxes .post:nth-child(even) { margin-right: 0; }
 	.post-boxes .post:nth-child(odd) { clear: left; }
-	.post-boxes .post.big-post { margin: 0 0 1em; }
+	.post-boxes .post.big-post { margin: 0 0 1em; max-width: 1000px; }
 	.call-to-action .form-inputs { float: none; clear: both; }
 	.call-to-action input.email { margin-left: 0; padding: 0 5%; width: 70%; }
-	#mc-embedded-subscribe { padding: 0 5%; margin-bottom: 10px; }
+	#mc-embedded-subscribe { padding: 0 5%; }
 	.ad-300x250 .ad { max-width: none; }
 }
 
@@ -1067,10 +1068,6 @@ body.admin-bar #header { top: 46px; }
 /* end general responsive */
 
 /* header responsive */
-@media all and (max-width: 1150px) {
-	#header .ad-970x90 { max-width: 378px; }
-}
-
 @media all and (max-width: 782px) {
 	#header .ad-970x90 { max-width: 48%; }
 }
@@ -1109,9 +1106,7 @@ body.admin-bar #header { top: 46px; }
 
 @media all and (max-width: 1150px) {
 	#content .group.filter-social { padding-top: 1em; padding-bottom: 1em; }
-	.filter-social .filter { padding: 2px 0; }
 	#content .filter-social ul.social { margin: 0; padding: 0; height: auto; background: none; }
-	.filter-social .search-form { margin-top: -7px; }
 }
 
 @media all and (max-width: 782px) {
