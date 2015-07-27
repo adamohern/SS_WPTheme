@@ -58,7 +58,7 @@
 							<div class="post-text">
                                 <?php if ( $vialink && strpos($vialink,"talk.solidsmack.com") ) { ?>
                                 <div class="smacktalk">
-                                    <p>This article began as <a href="<?php echo $vialink ?>">a thread on SmackTalk</a>. Want to get published on SolidSmack? <a href="http://talk.solidsmack.com">SmackTalk</a> is the place to start.</p>
+                                    <p>This article began as <a href="<?php echo $vialink ?>">a thread on SmackTalk</a>.<br />Want to get published on SolidSmack? <a href="http://talk.solidsmack.com">SmackTalk</a> is the place to start.</p>
                                 </div>   
                                 <? } ?>
 								<?php the_content(); ?>
