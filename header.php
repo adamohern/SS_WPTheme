@@ -17,7 +17,7 @@ if ( $options['headerscripts'] != '') {
 <body <?php body_class(); ?>>
 	<div id="header">
 		<div class="inner group">
-			<h1 id="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ss-logo@2X.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" width="264" height="45" /></a></h1>
+			<h1 id="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ss-logo@2X.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" width="200" height="34" /></a></h1>
 
 			<div class="mobile mobile-nav">
 				<a href="#menu" class="menu-toggle">MENU<span class="menu-icon"> &#9776;</span></a>
