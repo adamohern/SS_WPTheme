@@ -354,7 +354,7 @@ input { /* clear default iOS styles */
 
 .social { width: 530px; }
 
-.social li { float: right; margin-right: 12px; }
+.social li { float: right; margin-left: 12px; }
 
 .social a {
 	display: block;
