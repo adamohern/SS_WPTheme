@@ -62,7 +62,7 @@
                                 </div>   
                                 <? } ?>
 								<?php the_content(); ?>
-							</div
+                            </div>
 							<div class="post-refs">
 								<?php if ( $source || $vialink ) { ?><p><?php } ?>
 								<?php if ( $source ) { ?>
