@@ -203,8 +203,6 @@ margin-bottom: 15px;
 	background: #FFFFFF;
 }
 
-#content .group { margin-bottom: 1em; }
-
 #content .group.post-boxes { margin-bottom: 0; }
 
 .search-form { position: relative; }
@@ -695,9 +693,7 @@ body #header { position: fixed; top: 0; }
 /* end header */
 
 /* home */
-
-#content .group.filter-social { margin-bottom: 0; }
-#content .inner.filter-social { padding: 26px 33px 0; }
+#content .inner.filter-social { padding: 26px 33px; }
 #content .filter-social ul { list-style: none; margin: 0; }
 #content .filter-social ul.social {	float: right; height: 32px; }
 
