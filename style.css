@@ -94,6 +94,13 @@ width: 100% !important;}
     font-smoothing: antialiased;
 }
 
+div.smacktalk {
+   background-color:#f5f5f5;
+    padding:1em;
+    color:#666;
+    font-style: italic;
+}
+
 a.symbol:before {
     content: attr(title);
     padding-right: 0.3em;
