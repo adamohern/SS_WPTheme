@@ -95,11 +95,12 @@ width: 100% !important;}
 }
 
 div.smacktalk {
-   background-color:#e9f2f7;
-    padding:1em;
-    color:#666;
+    background-color: #F1FAFF;
+    padding: 2em;
+    color: #666;
     font-style: italic;
-    margin:1em 0;
+    margin: 1em 0 3em;
+    font-weight: 200;
 }
 div.smacktalk p {
     margin-bottom:0;
