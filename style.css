@@ -2,7 +2,7 @@
 Theme Name: EvD SolidSmack 2015 dev
 Theme URI:
 Author: EvD Media LLC
-Version: 2.2.7
+Version: 2.2.8
 
 */
 
@@ -206,30 +206,37 @@ margin-bottom: 15px;
 
 #content .group.post-boxes { margin-bottom: 0; }
 
-.search-form { position: relative; }
-
-.search-form input.search-field {
+.search-field {
+	background-color: transparent;
+	background-image: url(images/icon-search@2X.png);
+	background-position: 5px center;
+	background-repeat: no-repeat;
+	background-size: 24px 24px;
 	border: 1px solid #E2E2E2;
-	background: #FFF;
-	color: #BDBDBD;
-	line-height: 38px;
-	height: 38px;
-	padding: 0 12px;
-	font-size: 0.875em;
-	width: 166px;
+	cursor: pointer;
+	height: 37px;
+	margin: 3px 0;
+	padding: 0 0 0 34px;
+	position: relative;
+	-webkit-transition: width 400ms ease, background 400ms ease;
+	transition: width 400ms ease, background 400ms ease;
+	width: 0;
 }
 
-.search-form input.search-submit {
-	text-indent: -99999px;
-	border: none;
-	background: #FFF url( 'images/icon-search@2X.png' ) center no-repeat;
-	background-size: 50%;
-	width: 42px;
-	height: 34px;
-	position: absolute;
-	top: 3px;
-	right: 1px;
-	cursor: pointer;
+.search-field:focus {
+	background-color: #fff;
+	border: 1px solid #E2E2E2;
+	cursor: text;
+	outline: 0;
+	width: 230px;
+}
+
+.search-submit {
+  display: none;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
 }
 
 input { /* clear default iOS styles */
@@ -674,20 +681,6 @@ h2.title-flag:after {
 
 .filter-social .search-form { float: left; position: absolute; z-index: 10; }
 
-.search-form input.search-field { 
-	width: 110px;
-	width: 44px;
-	
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
- 
-	-webkit-transition: width 500ms;
-    -moz-transition: width 500ms;
-    -o-transition: width 500ms;
-    transition: width 500ms;
-}
-
 body { padding-top: 100px; }
 body #header { position: fixed; top: 0; }
 
@@ -944,14 +937,6 @@ h2.archive-title {
 }
 #footer h2.site-title a { color: #A5A5A5; }
 #footer h2.site-title a:hover { color: #BABABA; }
-
-#content .search-form input.search-field {
-    height: 40px;
-    line-height: 40px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box; 
-}
 
 #footer .search-form input.search-field, .wide-search .search-form input.search-field {
     width: 100%;
