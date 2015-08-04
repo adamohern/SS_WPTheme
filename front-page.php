@@ -4,7 +4,7 @@
 	
 		<div class="filter-social group inner">
 			<?php get_search_form(); ?>
-			<div class="filter">Filter: <?php wp_nav_menu( array( 'theme_location' => 'filter', 'menu_class' => 'filter-menu', 'container' => false ) ); ?></div>
+            <div class="filter"><a href="http://talk.solidsmack.com/">SmackTalk</a> | <?php wp_nav_menu( array( 'theme_location' => 'filter', 'menu_class' => 'filter-menu', 'container' => false ) ); ?></div>
 			<?php get_social(); ?>
 		</div><!--.filter-social-->
 							
