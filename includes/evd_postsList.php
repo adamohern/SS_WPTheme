@@ -133,7 +133,7 @@ function evd_query_posts ($args) {
             if($args['showcontent'] && $args['showcontent']!='false' && $args['showcontent']!='0') {
                 if ($args['showcontent'] == 'excerpt') $postsList .= '<div class="excerpt">'.get_the_excerpt().'</div>';
                 else { 
-                    if($args['showcontent'] != 'content') $morestring = $args['showcontent']; else $morestring = 'All';
+                    if($args['showcontent'] != 'content') $morestring = $args['showcontent']; else $morestring = 'more...';
                     $postsList .= '<div class="content">'.get_the_content($morestring).'</div>'; 
                 }
             }
