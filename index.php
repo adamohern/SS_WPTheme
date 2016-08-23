@@ -1,57 +1,62 @@
 <?php get_header(); ?>
-<div id="main">
-	<div id="content" class="group">
-			
-		<div class="post-boxes group inner">
-		
-			<h2 class="archive-title">
-				<?php
-				if ( is_day() ) {
-					echo 'Daily Archives: ' . get_the_date();
-				} else if ( is_month() ) {
-					echo 'Monthly Archives: ' . get_the_date( 'F Y' );
-				} else if ( is_year() ) {
-					echo 'Yearly Archives: ' . get_the_date( 'Y' );
-				} else if ( is_category() ) {
-					echo 'Category Archives: ' . single_cat_title( '', false );
-				} else if ( is_tag() ) {
-					echo 'Tag Archives: ' . single_tag_title( '', false );
-				} else if ( is_search() ) {
-					echo 'Search Results for: ' . get_search_query();
-				} else if ( is_post_type_archive() ) {
-					echo post_type_archive_title();
-				} else {
-					echo 'Archives';
-				} ?>
-			</h2>
-			
-			<div class="filter-social group inner">
-			<?php get_search_form(); ?>
-			<?php get_social(); ?>
-		</div><!--.archive-social-->
+<!-- CONTENT -->
 
-			<?php if ( have_posts() ) : ?>
-
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
-
-					<?php post_box_loop( 'radiothumb', 'horizontal post' ); ?>
-
-				<?php endwhile; ?>
-
-			<?php endif; ?>
-			
-			<div class="page-nav">
-				<div class="alignleft"><?php next_posts_link( '&laquo; Older Posts' ); ?></div>
-				<div class="alignright"><?php previous_posts_link( 'Newer Posts &raquo;' ); ?></div>
-			</div>
-
-			<div class="ad-970x90 group">
-				<div class="ad"><?php dynamic_sidebar( 'ad-5' ); ?></div>
-			</div><!-- .ad -->
-
-		</div><!-- .post-boxes -->
-
-	</div><!-- #content -->
-
+    <?php if(rehub_option('rehub_featured_toggle') && is_front_page() && !is_paged()) : ?>
+        <?php get_template_part('inc/parts/featured'); ?>
+    <?php endif; ?>
+	<div class="content"> 
+    <?php if(rehub_option('rehub_homecarousel_toggle') && is_front_page() && !is_paged()) : ?>
+        <?php get_template_part('inc/parts/home_carousel'); ?>
+    <?php endif; ?>    
+    <div class="clearfix">
+          <!-- Main Side -->
+          <div class="main-side clearfix<?php if (rehub_option('rehub_framework_archive_layout') == 'rehub_framework_archive_gridfull') : ?> full_width<?php endif ;?>">
+            <div class="wpsm-title under-title-line middle-size-title"><h5><?php _e('Latest Posts', 'rehub_framework'); ?></h5></div>
+            <?php
+                $module_exclude = rehub_option('rehub_exclude_posts');
+                if(($module_exclude) == 1) {
+                        $exclude_posts = rehub_exclude_feature_posts();
+                }
+                else $exclude_posts ='';
+                $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                $args = array(
+                  'paged' => $paged,
+                  'post__not_in' => $exclude_posts
+                );
+            ?>
+            <?php $query = new WP_Query( $args ); ?> 
+            <?php if (rehub_option('rehub_framework_archive_layout') == 'rehub_framework_archive_grid') : ?>
+                <?php  wp_enqueue_script('masonry'); wp_enqueue_script('imagesloaded'); wp_enqueue_script('masonry_init'); ?>
+                <div class="masonry_grid_fullwidth two-col-gridhub">
+            <?php elseif (rehub_option('rehub_framework_archive_layout') == 'rehub_framework_archive_gridfull') : ?>   
+                <?php  wp_enqueue_script('masonry'); wp_enqueue_script('imagesloaded'); wp_enqueue_script('masonry_init'); ?>
+                <div class="masonry_grid_fullwidth three-col-gridhub">                     
+            <?php endif ;?>   
+            <?php if ($query->have_posts()) : ?>
+            <?php while ($query->have_posts()) : $query->the_post(); ?>
+                <?php if (rehub_option('rehub_framework_archive_layout') == 'rehub_framework_archive_blog') : ?>
+                    <?php get_template_part('inc/parts/query_type2'); ?>
+                <?php elseif (rehub_option('rehub_framework_archive_layout') == 'rehub_framework_archive_list') : ?>
+                    <?php get_template_part('inc/parts/query_type1'); ?>
+                <?php elseif (rehub_option('rehub_framework_archive_layout') == 'rehub_framework_archive_grid' || rehub_option('rehub_framework_archive_layout') == 'rehub_framework_archive_gridfull') : ?>
+                    <?php get_template_part('inc/parts/query_type3'); ?>                    
+                <?php else : ?>
+                    <?php get_template_part('inc/parts/query_type1'); ?>	
+                <?php endif ;?>
+            <?php endwhile; endif;?>
+            <?php if (rehub_option('rehub_framework_archive_layout') == 'rehub_framework_archive_grid' || rehub_option('rehub_framework_archive_layout') == 'rehub_framework_archive_gridfull') : ?></div><?php endif ;?>
+            <div class="clearfix"></div>
+            <?php rehub_pagination(); ?>	
+            <?php wp_reset_query(); ?>
+        </div>	
+        <!-- /Main Side -->
+        <?php if (rehub_option('rehub_framework_archive_layout') != 'rehub_framework_archive_gridfull') : ?>
+            <!-- Sidebar -->
+            <?php get_sidebar(); ?>
+            <!-- /Sidebar --> 
+        <?php endif ;?>
+    </div>
+</div>
+<!-- /CONTENT -->     
+<!-- FOOTER -->
 <?php get_footer(); ?>
