@@ -42,7 +42,7 @@ FEATURE GRID
 
 .masonry_grid_fullwidth .small_post {border:0}
 
-.content{width:auto!important;padding:0!important;}
+.home .content, .archive .content {width:auto!important;padding:0!important;}
 .three-col-gridhub .small_post {padding:.5em;}
 
 .main_slider .flex-overlay{background-color:rgba(255, 255, 255, 0.9);padding:.5em;width:100%;position:absolute;bottom:0;left:0;text-align:left;}
@@ -58,7 +58,7 @@ FEATURE GRID
   .main_slider .flex-overlay h2{text-shadow:none;margin-bottom:.125em;}
   .main_slider .flex-overlay .post-meta{text-align:left;position:absolute;top:1em;right:0;}
 .main_slider.flexslider .hero-description{color:#000;margin:0 0 1em;}
-.main_slider .flex-control-nav{top:10px;}
+.main_slider .flex-control-nav{top:10px;bottom:inherit;}
 .flex-viewport .comment {display:none;}
 .flex-direction-nav a {top:10%}
 
@@ -66,6 +66,11 @@ FEATURE GRID
 .text_in_thumb .news_cat {display:none;}
 .text_in_thumb h2 {margin:0;}
 .text_in_thumb h2 a {color:inherit;}
+
+.home .sumome-share-client-wrapper {display:none;}
+
+.small_post.sponsored {background-color:#f5f5f5;padding:2em;}
+.gridBanner {width:350px;height:250px;background-color:#eee;text-align:center;margin:auto;}
 
 @media (min-width: 1024px){
 	.cover, .wpsm_featured_wrap {
@@ -76,6 +81,10 @@ FEATURE GRID
 		height: 100%;
 		width: 75%;
 	}
+
+.main_slider.flexslider:hover .flex-prev {left:4px}
+.main_slider.flexslider:hover .flex-next {right:4px}
+
 	.cover-story.col-2-1, .cover-story.col-2-2, .side-twocol {
 		height: 100%;
 		width: 25%;
