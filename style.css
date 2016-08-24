@@ -40,11 +40,38 @@ FEATURE GRID
     width: 100%;
 }
 
+.masonry_grid_fullwidth .small_post {border:0}
+
+.content{width:auto!important;padding:0!important;}
+.three-col-gridhub .small_post {padding:.5em;}
+
+.main_slider .flex-overlay{background-color:rgba(255, 255, 255, 0.9);padding:.5em;width:100%;position:absolute;bottom:0;left:0;text-align:left;}
+.main_slider .flex-overlay h2 a {color:#000}
+.main_slider .flex-overlay a.btn_more {    font: bold 18px/18px 'Roboto', trebuchet ms;
+    color:#333;
+    text-shadow: none;
+    border: 0;
+    background-color: rgba(0,0,0,.1);
+    position: absolute;
+    right: 0;
+    bottom: 1em;}
+  .main_slider .flex-overlay h2{text-shadow:none;margin-bottom:.125em;}
+  .main_slider .flex-overlay .post-meta{text-align:left;position:absolute;top:1em;right:0;}
+.main_slider.flexslider .hero-description{color:#000;margin:0 0 1em;}
+.main_slider .flex-control-nav{top:10px;}
+.flex-viewport .comment {display:none;}
+.flex-direction-nav a {top:10%}
+
+.news_in_thumb .text_in_thumb {background-color:rgba(255,255,255,.9);padding:.5em;}
+.text_in_thumb .news_cat {display:none;}
+.text_in_thumb h2 {margin:0;}
+.text_in_thumb h2 a {color:inherit;}
+
 @media (min-width: 1024px){
 	.cover, .wpsm_featured_wrap {
 		height: 75vh;
 		max-height: 460px;
-	}	
+	}
 	.cover-story.col-1, .main_slider.flexslider {
 		height: 100%;
 		width: 75%;
@@ -65,7 +92,7 @@ FEATURE GRID
 		margin-bottom:0;
 	}
 	.side-twocol {
-		height:auto; 
+		height:auto;
 		width:100%;
 	}
 	.side-twocol .col-1 {
@@ -76,6 +103,7 @@ FEATURE GRID
 		height: 40%;
 		width: 50%;
 	}
+
 }
 
 @media (max-width: 767px) {
@@ -86,7 +114,7 @@ FEATURE GRID
 	}
 	.side-twocol {
 		min-height: 25vh;
-		height:40%; 
+		height:40%;
 		width:100%;
 	}
 	.side-twocol .col-1 {
@@ -107,11 +135,11 @@ body { background-color:#ffffff; }
 /****************************************************************************
     Content Common
 ****************************************************************************/
-.content { margin:0 auto; box-shadow:none; }
+.content { box-shadow:none; }
 .content.featured { width:100%; margin:0 auto; padding:5px; box-shadow:none; clear:none; }
 .wpsm_featured_wrap { margin-bottom:0; }
 /******** Feature Side Coloumn ********/
-.news_out_thumb figure, .news_in_thumb figure { border:0;} 
+.news_out_thumb figure, .news_in_thumb figure { border:0;}
 /****************************************************************************
     SIDEBAR
 ****************************************************************************/
@@ -135,5 +163,5 @@ ul#menu-information { text-align:center; }
 (1024*768)
 ****************************************************************************/
 @media screen and (max-width: 1224px) and (min-width: 1024px) {
-	.main-side, .gallery-pics, .main_slider.flexslider{ width:75% !important; }
+	.main_slider.flexslider{ width:75% !important; }
 }
