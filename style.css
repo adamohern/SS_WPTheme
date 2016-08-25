@@ -84,6 +84,10 @@ FEATURE GRID
     margin: 0 0 1em;
     color: #000;
 }
+.main_slider.flexslider .slides .slide {
+    height: 560px;
+    line-height: 560px;
+}
 .main_slider .flex-control-nav {
     top: 10px;
     bottom: inherit;
@@ -93,6 +97,12 @@ FEATURE GRID
 }
 .flex-direction-nav a {
     top: 10%
+}
+.side-twocol .col-1 {
+    margin-bottom: 8px;
+}
+.side-twocol .columns {
+    height: 272px;
 }
 .news_in_thumb .text_in_thumb {
     padding: .5em;
@@ -125,6 +135,13 @@ FEATURE GRID
     .cover, .wpsm_featured_wrap {
         height: 75vh;
         max-height: 560px;
+    }
+    .main_slider.flexslider .slides .slide {
+        height: 560px;
+        line-height: 560px;
+    }
+    .side-twocol .columns {
+    height: 272px;
     }
     .cover-story.col-1, .main_slider.flexslider {
         width: 75%;
