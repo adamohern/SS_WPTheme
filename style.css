@@ -124,7 +124,7 @@ FEATURE GRID
 @media (min-width: 1024px) {
     .cover, .wpsm_featured_wrap {
         height: 75vh;
-        max-height: 460px;
+        max-height: 560px;
     }
     .cover-story.col-1, .main_slider.flexslider {
         width: 75%;
